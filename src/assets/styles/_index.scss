@@ -1,0 +1,19 @@
+@font-face {font-family: 'JohnstonITCPro';src: url('../fonts/webfonts/398FBB_0_0.eot');src: url('../fonts/webfonts/398FBB_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/398FBB_0_0.woff2') format('woff2'),url('../fonts/webfonts/398FBB_0_0.woff') format('woff'),url('../fonts/webfonts/398FBB_0_0.ttf') format('truetype');font-display: swap;}
+  
+@font-face {font-family: 'CaslonStdMedium';src: url('../fonts/webfonts/398FBB_1_0.eot');src: url('../fonts/webfonts/398FBB_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/398FBB_1_0.woff2') format('woff2'),url('../fonts/webfonts/398FBB_1_0.woff') format('woff'),url('../fonts/webfonts/398FBB_1_0.ttf') format('truetype');font-display: swap;}
+  
+@font-face {font-family: 'CaslonStdBook';src: url('../fonts/webfonts/398FBB_2_0.eot');src: url('../fonts/webfonts/398FBB_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/398FBB_2_0.woff2') format('woff2'),url('../fonts/webfonts/398FBB_2_0.woff') format('woff'),url('../fonts/webfonts/398FBB_2_0.ttf') format('truetype');font-display: swap;}
+  
+@font-face {font-family: 'JohnstonITCBold';src: url('../fonts/webfonts/398FBB_3_0.eot');src: url('../fonts/webfonts/398FBB_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/398FBB_3_0.woff2') format('woff2'),url('../fonts/webfonts/398FBB_3_0.woff') format('woff'),url('../fonts/webfonts/398FBB_3_0.ttf') format('truetype');font-display: swap;}
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import './variables';
+@import './mixins';
+
+a,*{
+    &:focus, &:hover{
+        text-decoration: none;
+        @include box-shadow(none);
+        outline: none !important;
+    }
+}

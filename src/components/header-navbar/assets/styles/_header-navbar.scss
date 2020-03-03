@@ -1,0 +1,243 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+.navbar {
+    padding: 2.7rem 4.5rem 1em 2.8em !important;
+
+    @media only screen and (max-width: $laptop-large) {
+        padding: 2.7rem 7.5rem 1em 5.8em !important;
+    }
+
+    @media only screen and (max-width: $desktop-min-width) {
+        padding: 2.7rem 4.5rem 1em 2.8em !important;
+    }
+
+    @media only screen and (max-width: $desktop-mac-width) {
+        padding: 2.7rem 1.5rem 1em 1.2em !important;
+    }
+
+	@media only screen and (max-width: $mobile-min-width) {
+        padding: 2.7rem 4.5rem 1em 0.8em !important;
+    }
+}
+
+.nav-logo {
+    max-height:214px;
+    max-width:214px;
+
+    @media only screen and (max-width: $ipad-min-width) {
+        max-width: 174px;
+        max-height: 174px;
+    }
+
+    @media only screen and (max-width: $mobile-min-width) {
+        max-width: 142px;
+        max-height: 142px;
+    }
+}
+
+.m-left {
+    margin-left: -26px !important;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0 !important;
+    min-height: 144px;
+    margin: 0 auto;
+    z-index:1;
+
+    &-nav {
+        .navbar {
+            &-nav {
+                .nav {
+                    &-link {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        padding: 12px 14px;
+                        font-weight: 700 !important;
+                        letter-spacing: 1.08px;
+
+                        &:hover, &:focus {
+                            color: #e6e6e6;
+                        }
+
+                        @media only screen and (max-width: $large-high-monitor) {
+                            padding: 12px 14px;
+                        }
+
+                        @media only screen and (max-width: $laptop-large) {
+                            padding: 12px 14px;
+                        }
+
+                        @media only screen and (max-width: $desktop-mac-width) {
+                            padding: 12px 16px;
+                        }
+                    }
+                }
+            }
+
+            &-toggler {
+                border-color: transparent;
+            }
+
+            &-collapse {
+                &.collapse {
+                    &.show {
+                        z-index: 1;
+                    }
+                }
+
+                @media only screen and (max-width: $ipad-max-width) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .icon {
+        display: inline-block;
+        width: 24px;
+        height: 18px;
+
+        &.icon-menu {
+            background-image: url('../img/menu.svg');
+        }
+    }
+
+    .contact-btn {
+        border: 1px solid #fff;
+        border-radius: 0;
+        @include transition(all ease-in .3s);
+        font-size: 12px !important; 
+        padding: 16px 35px 15px 33px !important;
+        letter-spacing: 1.6px !important;
+
+        &:hover {
+            background-color: #fff;
+            color: #000 !important;
+        }
+
+        @media only screen and (max-width: $mobile-max-width) {
+            position: relative;
+            top: 50px;
+            width: 60% !important;
+        }
+    }
+
+    .bm {
+        &-burger {
+            &-button {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: 3%;
+                top: 70px;
+                left: auto;
+                display: none;
+
+                @media only screen and (max-width: $ipad-max-width) {
+                    display: block;
+                }
+
+                @media only screen and (max-width: $mobile-min-width) {
+                    top: 60px;
+                }
+            }
+
+            &-bars {
+                background: #fff;
+
+                &:hover {
+                    background: #a90000;
+                }
+            }
+        }
+
+        &-cross {
+            background: #fff;
+            width: 2px !important;
+            height: 25px !important;
+
+            &-button {
+                height: 24px;
+                width: 24px;
+                right: 23px !important;
+                top: 23px !important;
+            }
+        }
+
+        &-menu {
+            background: #031A24;
+            opacity: 0.9;
+            padding: 2.5em 1.5em 0;
+
+            &-wrap {
+                position: fixed;
+                height: 100%;
+                top: 0;
+            }
+        }
+
+        &-morph {
+            &-shape {
+                fill: #373a47;
+            }
+        }
+
+        &-item {
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 12px 16px;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            letter-spacing: 1.08px;
+
+            &-list {
+                color: #b8b7ad;
+                padding: 0.8em;
+                margin: 60px auto !important;
+            }
+        }
+
+        &-overlay {
+            background: rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.mac {
+    .header {
+        &-nav {
+            .navbar {
+                &-nav {
+                    .nav {
+                        &-link {
+                            @media only screen and (max-width: $large-high-monitor) {
+                                padding: 12px 8px;
+                            }
+
+                            @media only screen and (max-width: $laptop-large) {
+                                padding: 12px 9px;
+                            }
+
+                            @media only screen and (max-width: $desktop-mac-width) {
+                                padding: 12px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .m-left {
+        margin-left: -15px !important;
+    }
+}

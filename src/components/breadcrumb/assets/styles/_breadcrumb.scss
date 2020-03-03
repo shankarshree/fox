@@ -1,0 +1,47 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+.header-breadcrumb {
+    background-color: #fff;
+    padding: 27px 0;
+
+    ul {
+        margin: 0;
+        padding-top: 2px;
+
+        li {
+            font-family: "JohnstonITCPro" !important;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #4A4A4A;
+            letter-spacing: 1.05px;
+            opacity: 0.5;
+            margin: 0;
+            padding-right: 3px;
+
+            &:not(last-child) {
+                margin-right: 0 !important;
+            }
+
+            a {
+                color: #4A4A4A;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .icon {
+        display: inline-block;
+        width: 6px;
+        height: 7px;
+
+        &.icon-arrow {
+            position: relative;
+            background-image: url('../img/arrow.svg');
+            top: -2px;
+        }
+    }
+}

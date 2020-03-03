@@ -1,0 +1,39 @@
+// Transition
+@mixin transition($arg){
+    -webkit-transition: $arg;
+    -moz-transition: $arg;
+    -ms-transition: $arg;
+    -o-transition: $arg;
+    transition: $arg;
+}
+
+// Box shadow
+@mixin box-shadow($shdw) {
+    -webkit-box-shadow: $shdw;
+    -moz-box-shadow: $shdw;
+    -ms-box-shadow: $shdw;
+    -o-box-shadow: $shdw;
+    box-shadow: $shdw;
+}
+
+// Animation keyframes
+@-webkit-keyframes sidewrap {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Standard syntax */
+@keyframes sidewrap {
+    from {
+        width: 0;
+    }
+    
+    to {
+        width: 100%;
+    }
+}

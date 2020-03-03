@@ -1,0 +1,39 @@
+
+body {
+    font-family: 'JohnstonITCPro', sans-serif !important;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'CaslonStdBook' !important;
+    font-weight: 500 !important;
+}
+
+.custom-font {
+    font-family: 'JohnstonITCPro', sans-serif !important;
+
+    &-bold {
+        font-family: "JohnstonITCBold" !important;
+    }
+}
+// fonts
+
+// Colors
+$navbarOne: #424b5a;
+$navbarTwo: #fff;
+// Colors
+
+// Breakpoints
+$large-high-monitor: 1920px;
+$large-monitor: 1600px;
+$laptop-large: 1440px;
+$desktop-min-width : 1366px;
+$desktop-mac-width: 1330px;
+$laptop-min-width: 1200px;
+$ipad-max-width: 1024px;
+$ipad-below-width: 1023px;
+$ipad-min-width: 768px;
+$mobile-max-width: 767px;
+$mobile-min-width: 480px;
+$mobile-small-width: 360px;
+// Breakpoints

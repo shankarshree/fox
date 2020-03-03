@@ -1,0 +1,226 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+.contact {
+    &-form {
+        font-size: 16px;
+
+        ul {
+            margin: 0;
+
+            li {
+                font-weight: 600;
+            }
+        }
+
+        .Business {
+            display: block !important;
+
+            &.business {
+                display: none !important;
+            }
+        }
+
+        .form-date {
+            .rdtPicker {
+                table {
+                    font-size: 12px;
+                    color: #000;
+
+                    th {
+                        padding: 5px;
+                    }
+
+                    td {
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+
+        .rooms {
+            &.one {
+                display: block !important;
+            }
+        }
+
+        .food {
+            &.two {
+                display: block !important;
+            }
+        }
+
+        .events {
+            &.three {
+                display: block !important;
+            }
+        }
+
+        .radio {
+            &-card {
+                display: block;
+                position: relative;
+                padding-left: 30px;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+
+                    &:checked ~ .radio-mark {
+                        &:after {
+                            display: block;
+                        }
+                    }
+                }
+
+                .radio-mark {
+                    &:after {
+                        top: 6px;
+                        left: 6px;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #E85642;
+                    }
+                }
+            }
+
+            &-mark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background-color: #fff;
+                border-radius: 50%;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    display: none;
+                }
+            }
+        }
+
+        .check {
+            &-card {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+              
+                input {
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+                  height: 0;
+                  width: 0;
+
+                    &:checked ~ .check-mark {
+                        background-color: #fff;
+                    }
+
+                    &:checked ~ .check-mark:after {
+                        display: block;
+                    }
+                }
+
+                .check {
+                    &-mark {
+                        @include transition(all ease-in .3s);
+
+                        &:after {
+                            left: 5px;
+                            top: 1px;
+                            width: 6px;
+                            height: 12px;
+                            border: solid #E85642;
+                            border-width: 0 3px 3px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+
+            &-mark {
+                position: absolute;
+                top: 3px;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                border: solid 1px #fff;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    display: none;
+                }
+            }
+        }
+
+        .form {
+            &-control {
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 0;
+                background-color: transparent;
+                color: #fff;
+                border: none;
+                border-bottom: 1px solid #fff;
+
+                &::placeholder {
+                    color: #fff;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &.select {
+					background: url('../img/down-arrow-white.svg') right center no-repeat;
+                    background-size: 18px;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+					
+                    option {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .contact {       
+            &-btn {
+                background-color: #e85642;
+                font-size: 14px;
+                font-weight: 600;
+                vertical-align: middle;
+                color: #fff;
+                border-radius: 0;
+                text-transform: uppercase;
+        
+                &:hover {
+                    background-color: #e53e27;
+                }
+            }
+        }
+    }
+}

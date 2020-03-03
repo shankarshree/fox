@@ -1,0 +1,8 @@
+# Redirects from what the browser requests to what we serve
+
+/contact                            /contact-us
+/eat/christmas-menu-2018            /food-and-drink/christmas-menu-private-dining
+/eat/set-menus                      /food-and-drink/
+/sleep/cavendish-suite-6            /rooms
+/sleep/cholmondley-executive-room-9 /rooms
+/sleep/dorset-suite-4               /rooms

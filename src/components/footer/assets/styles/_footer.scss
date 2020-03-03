@@ -1,0 +1,223 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+.social-icons img {
+    height:25px;
+    filter: invert(1);
+}
+
+.footer {
+    font-size: 16px;
+
+    .container {
+        &.ftwidth {
+            max-width: 1200px;
+
+            @media only screen and (max-width: $ipad-max-width) {
+                max-width: 960px;
+            }
+        }
+    }
+
+    &.footer-bg {
+        background-color: #031a24;
+        padding: 80px 0;
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            .footer {
+                &-nav {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin: 0 40px 0 0;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    @media only screen and (max-width: $ipad-max-width) {
+                        font-size: 12px;
+                        margin: 0 20px 0 0;
+                    }
+
+                    @media only screen and (min-device-width: $ipad-min-width) and (max-device-width: $ipad-max-width) and (orientation: landscape) {
+                        font-size: 12px;
+                        margin: 0 45px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &-heading {
+            color: #838f94;
+            font-weight: bold;
+
+            @media only screen and (max-width: $ipad-min-width) {
+                font-size: 14px;
+            }
+        }
+
+        &-details {
+            color: #fff;
+
+            @media only screen and (max-width: $ipad-min-width) {
+                font-size: 14px;
+            }
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            p {
+                margin: 0;
+                font-weight: 600;
+            }
+        }
+
+        &-line {
+            border-bottom: solid 1px #fff;
+            opacity: 0.05;
+        }
+
+        &-list {
+            margin: 0;
+            color: #838F94;
+
+            li {
+                font-weight: 600;
+                
+                a {
+                    color: #838F94;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        &-logo {
+            color: #838F94;
+        }
+    }
+
+    .social-icons {
+        margin: 0;
+        
+        li {
+            margin: 0 20px 0 0;
+
+            @media only screen and (max-width: $mobile-max-width) {
+                margin: 0 15px 0 0;
+            }
+
+            @media only screen and (max-width: $mobile-small-width) {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        .icons {
+            display: inline-block;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-size: 20px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 18px;
+
+        &.icon-fb {
+            mask: url('../img/fb.svg');
+            background-color: #fff;
+            width: 25px;
+            height: 25px;
+        }
+
+        &.icon-twitter {
+            mask: url('../img/twitter.svg');
+            background-color: #fff;
+            width: 25px;
+            height: 25px;
+        }
+
+        &.icon-insta {
+            mask: url('../img/instagram.svg');
+            background-color: #fff;
+            width: 25px;
+            height: 25px;
+        }
+
+        &.icon-linkedin {
+            mask: url('../img/linkedin.svg');
+            background-color: #fff;
+            width: 18px;
+            height: 20px;
+        }
+
+        &.icon-footerlogo {
+            position: relative;
+            background-image: url('../img/starberrylogo.svg');
+            background-size: cover;
+            top: 0;
+            width: 74px;
+            height: 15px;
+        }
+    }
+
+    .cookie-popup {
+        position: fixed;
+        background-color: #031a24;
+        color: #fff;
+        opacity: 0.9;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 25px 50px;
+        z-index: 10000;
+        font-size: 19px !important;
+        line-height: 32px !important;
+        font-weight: 300;
+        justify-content: center;
+        @include transition(all ease-in .5s);
+
+        &.gotit-hidden {
+            bottom: -200px;
+        }
+
+        a {
+            color: #e85642;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .gotit {
+            padding: 0;
+            color: #e85642;
+            text-decoration: underline;
+            font-size: 19px;
+            line-height: 32px !important;
+            font-weight: 600;
+            border: 0;
+            line-height: normal;
+            padding-left:5px;
+        }
+    }
+}
