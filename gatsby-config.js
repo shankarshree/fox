@@ -37,7 +37,7 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `fzlso4ysqe01`,
-        accessToken: `VuZndTDcWnOILWuTqMMQ0om4N7kEUZVVlL_GfVqbBno`,
+        accessToken: `prSvlghnn-7Y8kxC9Yww351kSz3NLL_wapZWi9a-yoA`,
         host: `preview.contentful.com`,
       },
     },
