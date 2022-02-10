@@ -51,7 +51,7 @@
     "bootstrap": "^4.4.1",
     "gatsby-plugin-sass": "^2.1.29",
     "lightbox2": "^2.11.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prettier": "^1.19.1",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-burger-menu": "^2.6.13",
